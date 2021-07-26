@@ -31,6 +31,18 @@ class ProgressButton @JvmOverloads constructor(
 
             setBackgroundColor(R.drawable.progress_button_background)
 
+            val titleResId = attributes.getResourceId(R.styleable.ProgressButton_progress_button_title,0)
+            if(titleResId != 0){
+                title = context.getString(titleResId)
+            }
+
+            val titleLoadingResId = attributes.getResourceId(R.styleable.ProgressButton_progress_button_loading_title,0)
+            if(titleLoadingResId != 0){
+                loadingTitle = context.getString(titleLoadingResId)
+            }
+
+
+
             attributes.recycle()
         }
     }
