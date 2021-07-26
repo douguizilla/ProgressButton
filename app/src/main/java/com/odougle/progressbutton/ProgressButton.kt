@@ -37,7 +37,7 @@ class ProgressButton @JvmOverloads constructor(
                 R.styleable.ProgressButton
             )
 
-            setBackgroundColor(R.drawable.progress_button_background)
+            setBackgroundResource(R.drawable.progress_button_background)
 
             val titleResId =
                 attributes.getResourceId(R.styleable.ProgressButton_progress_button_title, 0)
