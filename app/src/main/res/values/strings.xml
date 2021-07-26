@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Progress Button</string>
+    <string name="login">Login</string>
+    <string name="login_loading_state">Please wait...</string>
 </resources>
