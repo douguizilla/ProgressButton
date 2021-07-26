@@ -9,4 +9,9 @@ class ProgressButton @JvmOverloads constructor(
     attrs: AttributeSet,
     defStyleAttr: Int = 0
 ): ConstraintLayout(context, attrs, defStyleAttr) {
+
+    private var title: String? = null
+    private var loadingTitle: String? = null
+
+
 }
