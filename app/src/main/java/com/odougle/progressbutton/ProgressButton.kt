@@ -19,10 +19,19 @@ class ProgressButton @JvmOverloads constructor(
         .inflate(LayoutInflater.from(context), this, true)
 
     init {
-
+        setLayout(attrs)
     }
 
     private fun setLayout(attrs: AttributeSet?){
+        attrs?.let { attributeSet ->
+            val attributes = context.obtainStyledAttributes(
+                attributeSet,
+                R.styleable.ProgressButton
+            )
 
+            setBackgroundColor(R.drawable.progress_button_background)
+
+            attributes.recycle()
+        }
     }
 }
