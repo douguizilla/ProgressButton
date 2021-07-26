@@ -18,4 +18,11 @@ class ProgressButton @JvmOverloads constructor(
     private val binding = ProgressButtonBinding
         .inflate(LayoutInflater.from(context), this, true)
 
+    init {
+
+    }
+
+    private fun setLayout(attrs: AttributeSet?){
+
+    }
 }
